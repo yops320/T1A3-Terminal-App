@@ -4,7 +4,10 @@ import time
 import menu
 
 
-
+input_file = "recipe.csv"
+child_age = ["under 6 months", "6-12 months", "12-18months", "18-24months"]
+max_children = 4
+alloted_time = ["30 mins or less", "30-60 mins", "1-1.5hrs"]
 
 
 
