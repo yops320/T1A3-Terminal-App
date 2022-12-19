@@ -46,3 +46,30 @@ def input_data():
     data.append(time)
 
     return data
+
+def main():
+    print("===============start================")
+
+    recipe_info = pd.read_csv(input_file)
+
+    data = input_data()
+
+    age = child_age[data[0] - 1]
+    N = data[1]
+    time = alloted_time[data[2] - 1]
+    for i in range(len(recipe_info["No"])):
+        if recipe_info[recipe_info.keys()[1]][i] == age and recipe_info[recipe_info.keys()[2]][i] == N and \
+                recipe_info[recipe_info.keys()[3]][i] == time:
+            print('---------For the following information : \n')
+            print('                   %s : %s\n' % (recipe_info.keys()[1], age))
+            print('                   %s : %d\n' % (recipe_info.keys()[2], N))
+            print('                   %s : %s\n' % (recipe_info.keys()[3], time))
+            print('---------Recipe No is : %d \n' % (recipe_info[recipe_info.keys()[4]][i]))
+
+            break
+
+    print("===============end================")
+
+
+if __name__ == "__main__":
+    main()
