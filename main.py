@@ -91,7 +91,7 @@ def main():
         if add_rows == 'Yes':
             data = input_data()
             print(data)
-            recipe_number = input('Enter Recipe Number : ')
+            
             newrecipe_name = input('Enter Recipe Name  : ')
             newrecipe_method = input('how do you make it : ')
             recipe_info.loc[len(recipe_info)+2] = [recipe_info['No'].iloc[len(recipe_info)-1] + 1, child_age[data[0]-1], data[1], alloted_time[data[2]-1], recipe_number, newrecipe_name, newrecipe_method]
