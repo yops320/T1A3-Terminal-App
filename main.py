@@ -61,12 +61,13 @@ def main():
     N = data[1]
     time = alloted_time[data[2] - 1]
     mathced_criteria_df = recipe_info[(recipe_info["Age of child"] == age) & (recipe_info["How many children"] == N) & (recipe_info["How much time do you have to cook"] == time)]
-    print("Following recipe(s) matched the criteria ", ', '.join(map(str, mathced_criteria_df['Recipe No'])))
+    print("Following recipe(s) matched the criteria ", ', '.join(map(str, mathced_criteria_df['Recipe name'])))
     recipe_number = 0
     while True:
+        a=mathced_criteria_df['Recipe name'].to_list()
         try:
-            recipe_number = int(input("Enter the recipe number to show "))
-            if recipe_number in mathced_criteria_df['Recipe No'].to_list():
+            recipe_name = input("Enter the recipe name to show ")
+            if recipe_name in a:
                 break
         except:
             continue
@@ -77,8 +78,8 @@ def main():
     print('                   %s : %s\n' % (recipe_info.keys()[1], age))
     print('                   %s : %d\n' % (recipe_info.keys()[2], N))
     print('                   %s : %s\n' % (recipe_info.keys()[3], time))
-    a=mathced_criteria_df['Recipe No'].to_list()
-    b=a.index(recipe_number)
+    a=mathced_criteria_df['Recipe name'].to_list()
+    b=a.index(recipe_name)
     print('---------Recipe Name is : %s \n' % Rcp_Name[b])
     print('---------Here\'s how to make it : %s \n' % Rcp_Method[b])
 
