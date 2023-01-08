@@ -16,7 +16,7 @@ def input_data():
     age = -1
     while 1:
         try:
-            age = int(input("Age of child. Please input the number(1-4)[ 1(" + child_age[0] + "), 2(" +
+            age = int(input("Age of youngest child? \nPlease input the number(1-4)\n[ 1(" + child_age[0] + "), 2(" +
                             child_age[1] + "), 3(" + child_age[2] + "), 4(" + child_age[3] + ") ] :   "))
             if isinstance(age, int) and 1 <= age <= 4:
                 break
@@ -27,7 +27,7 @@ def input_data():
     N = -1
     while 1:
         try:
-            N = int(input("How many children(Please input the number between 1 and " + str(max_children) + ") :   "))
+            N = int(input("How many serves?\n(Please input the number between 1 and " + str(max_children) + ") :   "))
             if isinstance(N, int) and 1 <= N <= max_children:
                 break
         except:
@@ -37,7 +37,7 @@ def input_data():
     time = -1
     while 1:
         try:
-            time = int(input("How much time do you have to cook? Please input the number(1-3)[ 1(" + alloted_time[0] +
+            time = int(input("How much time do you have to cook? \nPlease input the number(1-3)\n[ 1(" + alloted_time[0] +
                              "), 2(" + alloted_time[1] + "), 3(" + alloted_time[2] + ") ]:   "))
             if isinstance(time, int) and 1 <= time <= 3:
                 break
