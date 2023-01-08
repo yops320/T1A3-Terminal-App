@@ -87,7 +87,7 @@ def main():
     #print('len recipe_info  :', len(recipe_info))
     #print (recipe_info)
     while True:
-        add_rows = input('Do you want to add rows ? Yes/No ')
+        add_rows = input('Do you want to add your own recipe? Yes/No ')
         if add_rows == 'Yes':
             data = input_data()
             print(data)
