@@ -37,8 +37,9 @@ Feature 3 of ths application allows the user to add their own recipes
 My planning and documentation was hindered. I was forced to jump in, out back in and rush. I'm a fan of trello and would have likely utilised as such.
 
 
-
-
+![Trello1](https://github.com/yops320/T1A3-Terminal-App/blob/master/docs/Trello1.png?raw=true)
+![Trello2](https://github.com/yops320/T1A3-Terminal-App/blob/master/docs/Trello2.png?raw=true)
+![Trello3](https://github.com/yops320/T1A3-Terminal-App/blob/master/docs/Trello3.png?raw=true)
 
 <br>
 
